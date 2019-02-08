@@ -84,183 +84,187 @@ def draw_bintrees(ax,n,p,deltay):
         r = np.array([[p[2][0]-distance,p[2][1]-(deltay)],[p[2][0],p[2][1]],[p[2][0]+distance,p[2][1]-(deltay)]])
         draw_bintrees(ax,n-1,q,deltay)
         draw_bintrees(ax,n-1,r,deltay)
-        
-################################ Square A ################################
-plt.close("all") 
-orig_size = 800
-p = np.array([[0,0],[0,orig_size],[orig_size,orig_size],[orig_size,0],[0,0]])
-fig, ax = plt.subplots()
-draw_squares(ax,10,p,.8)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('SquaresA.png')
 
-################################ Square B ################################
-plt.close("all") 
-orig_size = 800
-p = np.array([[0,0],[0,orig_size],[orig_size,orig_size],[orig_size,0],[0,0]])
-fig, ax = plt.subplots()
-draw_squares(ax,10,p,.1)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('SquaresB.png')
-
-################################ Square C ################################
-plt.close("all") 
-orig_size = 800
-p = np.array([[0,0],[0,orig_size],[orig_size,orig_size],[orig_size,0],[0,0]])
-fig, ax = plt.subplots()
-draw_squares(ax,70,p,.1)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('SquaresC.png')
-
-################################ Circle A ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_circles(ax, 3, [1000,0], 1000,.5)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('CirclesA.png')
-
-################################ Circle B ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_circles(ax, 50, [1000,0], 1000,.83)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('CirclesB.png')
-
-################################ Circle C ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_circles(ax, 80, [1000,0], 1000,.92)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('CirclesC.png')
-
-################################ Children Squares A ################################
-plt.close("all") 
-orig_size = 1000
-p = np.array([[-orig_size,-orig_size],[-orig_size,orig_size],[orig_size,orig_size],[orig_size,-orig_size],[-orig_size,-orig_size]])
-fig, ax = plt.subplots()
-draw_square_children(ax,2,p)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('ChildSquaresA.png')
-
-################################ Children Squares B ################################
-plt.close("all") 
-orig_size = 1000
-p = np.array([[-orig_size,-orig_size],[-orig_size,orig_size],[orig_size,orig_size],[orig_size,-orig_size],[-orig_size,-orig_size]])
-fig, ax = plt.subplots()
-draw_square_children(ax,3,p)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('ChildSquaresB.png')
-
-################################ Children Squares C ################################
-plt.close("all") 
-orig_size = 1000
-p = np.array([[-orig_size,-orig_size],[-orig_size,orig_size],[orig_size,orig_size],[orig_size,-orig_size],[-orig_size,-orig_size]])
-fig, ax = plt.subplots()
-draw_square_children(ax,4,p)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('ChildSquaresC.png')
-
-################################ Touching Circles A ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_touching_circles(ax, 10, [2000,0], 2000,.62)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('TouchingCirclesA.png')
-
-################################ Touching Circles B ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_touching_circles(ax, 80, [1000,0], 1000,.9)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('TouchingCirclesB.png')
-
-################################ Touching Circles C ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_touching_circles(ax, 120, [1000,0], 1000,.95)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('TouchingCirclesC.png')
-
-################################ Binary Tree A ################################
-plt.close("all") 
-orig_size = 1000
-p = np.array([[-orig_size,-orig_size],[0,0],[orig_size,-orig_size]])
-fig, ax = plt.subplots()
-draw_bintrees(ax,3,p,orig_size)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('BinTreeA.png')
-
-################################ Binary Tree B ################################
-plt.close("all") 
-orig_size = 1000
-p = np.array([[-orig_size,-orig_size],[0,0],[orig_size,-orig_size]])
-fig, ax = plt.subplots()
-draw_bintrees(ax,4,p,orig_size)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('BinTreeB.png')
-
-################################ Binary Tree C ################################
-plt.close("all") 
-orig_size = 1000
-p = np.array([[-orig_size-500,-orig_size],[0,0],[orig_size+500,-orig_size]])
-fig, ax = plt.subplots()
-draw_bintrees(ax,6,p,orig_size)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('BinTreeC.png')
-
-################################ Five Circles A ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_five_circles(ax, 3, [1000,0], 1000)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('FourCirclesA.png')
-
-################################ Five Circles B ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_five_circles(ax, 4, [1000,0], 1000)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('FourCirclesB.png')
-
-################################ Five Circles C ################################
-plt.close("all") 
-fig, ax = plt.subplots() 
-draw_five_circles(ax, 5, [1000,0], 1000)
-ax.set_aspect(1.0)
-ax.axis('off')
-plt.show()
-fig.savefig('FourCirclesC.png')
+try: 
+    ################################ Square A ################################
+    plt.close("all") 
+    orig_size = 800
+    p = np.array([[0,0],[0,orig_size],[orig_size,orig_size],[orig_size,0],[0,0]])
+    fig, ax = plt.subplots()
+    draw_squares(ax,10,p,.8)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('SquaresA.png')
+    
+    ################################ Square B ################################
+    plt.close("all") 
+    orig_size = 800
+    p = np.array([[0,0],[0,orig_size],[orig_size,orig_size],[orig_size,0],[0,0]])
+    fig, ax = plt.subplots()
+    draw_squares(ax,10,p,.1)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('SquaresB.png')
+    
+    ################################ Square C ################################
+    plt.close("all") 
+    orig_size = 800
+    p = np.array([[0,0],[0,orig_size],[orig_size,orig_size],[orig_size,0],[0,0]])
+    fig, ax = plt.subplots()
+    draw_squares(ax,70,p,.1)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('SquaresC.png')
+    
+    ################################ Circle A ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_circles(ax, 3, [1000,0], 1000,.5)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('CirclesA.png')
+    
+    ################################ Circle B ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_circles(ax, 50, [1000,0], 1000,.83)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('CirclesB.png')
+    
+    ################################ Circle C ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_circles(ax, 80, [1000,0], 1000,.92)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('CirclesC.png')
+    
+    ################################ Children Squares A ################################
+    plt.close("all") 
+    orig_size = 1000
+    p = np.array([[-orig_size,-orig_size],[-orig_size,orig_size],[orig_size,orig_size],[orig_size,-orig_size],[-orig_size,-orig_size]])
+    fig, ax = plt.subplots()
+    draw_square_children(ax,2,p)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('ChildSquaresA.png')
+    
+    ################################ Children Squares B ################################
+    plt.close("all") 
+    orig_size = 1000
+    p = np.array([[-orig_size,-orig_size],[-orig_size,orig_size],[orig_size,orig_size],[orig_size,-orig_size],[-orig_size,-orig_size]])
+    fig, ax = plt.subplots()
+    draw_square_children(ax,3,p)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('ChildSquaresB.png')
+    
+    ################################ Children Squares C ################################
+    plt.close("all") 
+    orig_size = 1000
+    p = np.array([[-orig_size,-orig_size],[-orig_size,orig_size],[orig_size,orig_size],[orig_size,-orig_size],[-orig_size,-orig_size]])
+    fig, ax = plt.subplots()
+    draw_square_children(ax,4,p)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('ChildSquaresC.png')
+    
+    ################################ Touching Circles A ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_touching_circles(ax, 10, [2000,0], 2000,.62)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('TouchingCirclesA.png')
+    
+    ################################ Touching Circles B ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_touching_circles(ax, 80, [1000,0], 1000,.9)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('TouchingCirclesB.png')
+    
+    ################################ Touching Circles C ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_touching_circles(ax, 120, [1000,0], 1000,.95)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('TouchingCirclesC.png')
+    
+    ################################ Binary Tree A ################################
+    plt.close("all") 
+    orig_size = 1000
+    p = np.array([[-orig_size,-orig_size],[0,0],[orig_size,-orig_size]])
+    fig, ax = plt.subplots()
+    draw_bintrees(ax,3,p,orig_size)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('BinTreeA.png')
+    
+    ################################ Binary Tree B ################################
+    plt.close("all") 
+    orig_size = 1000
+    p = np.array([[-orig_size,-orig_size],[0,0],[orig_size,-orig_size]])
+    fig, ax = plt.subplots()
+    draw_bintrees(ax,4,p,orig_size)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('BinTreeB.png')
+    
+    ################################ Binary Tree C ################################
+    plt.close("all") 
+    orig_size = 1000
+    p = np.array([[-orig_size-500,-orig_size],[0,0],[orig_size+500,-orig_size]])
+    fig, ax = plt.subplots()
+    draw_bintrees(ax,6,p,orig_size)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('BinTreeC.png')
+    
+    ################################ Five Circles A ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_five_circles(ax, 3, [1000,0], 1000)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('FourCirclesA.png')
+    
+    ################################ Five Circles B ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_five_circles(ax, 4, [1000,0], 1000)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('FourCirclesB.png')
+    
+    ################################ Five Circles C ################################
+    plt.close("all") 
+    fig, ax = plt.subplots() 
+    draw_five_circles(ax, 5, [1000,0], 1000)
+    ax.set_aspect(1.0)
+    ax.axis('off')
+    plt.show()
+    fig.savefig('FourCirclesC.png')
+    
+except TypeError:
+    print("There's an error in a method call!")
